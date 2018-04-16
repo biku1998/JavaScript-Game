@@ -33,6 +33,8 @@ if(preScore+dice >= 20)
      
      document.querySelector('#name-'+(activePlayer)).textContent = 'Winner !'
      document.querySelector('.dice').style.display = 'none'
+     document.querySelector('#pl'+(activePlayer+1)).classList.add('winner')
+     document.querySelector('#pl'+(activePlayer+1)).classList.remove('active')
          setTimeout(function(){
         newGame();
     },4000)
